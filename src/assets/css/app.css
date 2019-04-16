@@ -1,0 +1,9 @@
+/* Your app styles here */
+
+/* 修改变量色值可更改主题  green:0b8b7d default:2f4050 red:910000*/
+:root {
+    --f7-theme-color: #0b8b7d;
+    --f7-theme-color-shade: #0b8b7d;
+    --f7-theme-color-tint: #0b8b7d;
+    --f7-theme-color-rgb: 11, 139, 125;
+}

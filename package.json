@@ -1,5 +1,5 @@
 {
-  "name": "hello",
+  "name": "f7vue-vue-cli3.0",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -8,20 +8,20 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
-    "framework7": "^3.5.2",
-    "framework7-vue": "^3.5.2",
-    "lib-flexible": "^0.3.2",
-    "postcss-px2rem": "^0.3.0",
-    "vue": "^2.5.17"
+    "framework7": "4.0.0",
+    "framework7-icons": "2.2.0",
+    "framework7-vue": "4.0.0",
+    "material-design-icons": "^3.0.1",
+    "vue": "^2.6.3"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.2.0",
-    "@vue/cli-plugin-eslint": "^3.2.1",
-    "@vue/cli-service": "^3.2.0",
+    "@vue/cli-plugin-babel": "^3.6.0",
+    "@vue/cli-plugin-eslint": "^3.6.0",
+    "@vue/cli-service": "^3.6.0",
     "babel-eslint": "^10.0.1",
-    "eslint": "^5.8.0",
-    "eslint-plugin-vue": "^5.0.0-0",
-    "vue-template-compiler": "^2.5.17"
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.2.2",
+    "vue-template-compiler": "^2.6.10"
   },
   "eslintConfig": {
     "root": true,

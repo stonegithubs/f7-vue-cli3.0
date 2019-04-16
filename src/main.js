@@ -1,23 +1,27 @@
-import Vue from 'vue'
+// Import Vue
+import Vue from 'vue';
 
-// Import F7 Bundle
-import Framework7 from 'framework7/framework7.esm.bundle.js'
+// Import F7
+import Framework7 from 'framework7/framework7.esm.bundle.js';
 
-// Import F7-Vue Plugin Bundle (with all F7 components registered)
-import Framework7Vue from 'framework7-vue/framework7-vue.esm.bundle.js'
+// Import F7 Vue Plugin
+import Framework7Vue from 'framework7-vue/framework7-vue.esm.bundle.js';
 
-import 'framework7/css/framework7.css';
+// Import F7 Styles
+import 'framework7/css/framework7.bundle.css';
 
-// Init F7-Vue Plugin
-Framework7.use(Framework7Vue);
+// Import Icons and App Custom Styles
+import IconsStyles from './assets/css/icons.css';
+import AppStyles from './assets/css/app.css';
 
-// Import Main App component
-import App from './App.vue';
+// Import App Component
+import App from './app.vue';
 
-import 'lib-flexible';
+// Init F7 Vue Plugin
+Framework7.use(Framework7Vue)
+
 // Init App
 new Vue({
-  el: '#app',
-  render: (h) => h(App),
-  // ...
-});
+    el: '#app',
+    render: h => h(App)
+})
