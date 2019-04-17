@@ -70,10 +70,10 @@
     export default {
         data() {
             return {
-                // Framework7 parameters here
+                // Framework7 parameters he re
                 f7params: {
-                    id: 'io.framework7.testapp', // App bundle ID
-                    name: 'Framework7', // App name
+                    id: 'framework7-vue', // App bundle ID
+                    name: 'Framework7-vue', // App name
                     theme: 'auto', // Automatic theme detection
                     // App routes
                     routes: routes,

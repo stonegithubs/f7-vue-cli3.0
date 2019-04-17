@@ -5,7 +5,7 @@ function resolve(dir) {
 }
 module.exports = {
     devServer: {
-        port: 9999,
+        port: 8888,
     },
     lintOnSave: true,
     configureWebpack: {
@@ -48,5 +48,4 @@ module.exports = {
             }
         }
     }
-
 }
