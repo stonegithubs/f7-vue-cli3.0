@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "copy-webpack-plugin": "^5.0.2",
     "framework7": "4.0.0",
     "framework7-icons": "2.2.0",
     "framework7-vue": "4.0.0",

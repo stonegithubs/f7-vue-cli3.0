@@ -1,55 +1,75 @@
 <template>
   <f7-page>
     <f7-navbar>
-      <f7-nav-left>
-      </f7-nav-left>
-      <f7-nav-title>My App</f7-nav-title>
+      <f7-nav-title>f7-vue</f7-nav-title>
       <f7-nav-right>
-        <f7-link icon-if-ios="f7:menu" icon-if-md="material:menu" panel-open="right"></f7-link>
+        <f7-link href="/login/" icon-if-ios="f7:menu" icon-if-md="material:menu"></f7-link>
       </f7-nav-right>
     </f7-navbar>
-    <f7-toolbar bottom>
-      <f7-link>Left Link</f7-link>
-      <f7-link>Right Link</f7-link>
-    </f7-toolbar>
-    <f7-block strong>
-      <p>Here is your blank Framework7 app. Let's see what we have here.</p>
-    </f7-block>
-    <f7-block-title>Navigation</f7-block-title>
-    <f7-list>
-      <f7-list-item link="/about/" title="About"></f7-list-item>
-      <f7-list-item link="/form/" title="Form"></f7-list-item>
-    </f7-list>
-    <f7-block-title>Modals</f7-block-title>
-    <f7-block strong>
+      <f7-block class="text-align-center"><h1>Framework7-vue </h1></f7-block>
+      <f7-block-title>我的应用</f7-block-title>
+    <f7-block strong class="f7cont">
       <f7-row>
-        <f7-col width="50">
-          <f7-button fill raised popup-open="#popup">Popup</f7-button>
+        <f7-col width="33">
+          <f7-link onclick="window.location.href='/PageA/index.html'">
+            <span class="icon-box bg-color-blue">
+              <i class="f7-icons">folder_fill</i>
+            </span>
+            <span class="icon-name">folder_fill </span>
+          </f7-link>
         </f7-col>
-        <f7-col width="50">
-          <f7-button fill raised login-screen-open="#login-screen">Login Screen</f7-button>
+        <f7-col width="33">
+          <f7-link onclick="window.location.href='/PageB/index.html'">
+             <span class="icon-box bg-color-red">
+              <i class="f7-icons">home_fill</i>
+            </span>
+            <span class="icon-name">home_fill</span>
+          </f7-link>
+        </f7-col>
+        <f7-col width="33">
+          <f7-link href="/about/">
+           <span class="icon-box">
+            <i class="f7-icons">keyboard_fill</i>
+          </span>
+          <span class="icon-name">keyboard_fill</span>
+          </f7-link>
+        </f7-col>
+        <f7-col width="33">
+          <f7-link href="/about/">
+          <span class="icon-box bg-color-yellow">
+            <i class="f7-icons">layers_alt_fill</i>
+          </span>
+          <span class="icon-name">layers_alt_fill</span>
+          </f7-link>
+        </f7-col>
+        <f7-col width="33">
+          <f7-link href="/about/">
+           <span class="icon-box bg-color-teal">
+            <i class="f7-icons">lock_fill</i>
+          </span>
+          <span class="icon-name">lock_fill</span>
+          </f7-link>
+        </f7-col>
+        <f7-col width="33">
+          <f7-link href="/about/">
+           <span class="icon-box bg-color-green">
+            <i class="f7-icons">favorites_alt_fill</i>
+          </span>
+          <span class="icon-name">favorites_alt_fill</span>
+          </f7-link>
         </f7-col>
       </f7-row>
     </f7-block>
-    <f7-block-title>Panels</f7-block-title>
-    <f7-block strong>
-      <f7-row>
-        <f7-col width="50">
-          <f7-button fill raised panel-open="left">Left Panel</f7-button>
-        </f7-col>
-        <f7-col width="50">
-          <f7-button fill raised panel-open="right">Right Panel</f7-button>
-        </f7-col>
-      </f7-row>
-    </f7-block>
-    <f7-list>
-      <f7-list-item link="/dynamic-route/blog/45/post/125/?foo=bar#about" title="Dynamic Route"></f7-list-item>
-      <f7-list-item link="/load-something-that-doesnt-exist/" title="Default Route (404)"></f7-list-item>
-    </f7-list>
+
   </f7-page>
 </template>
 <script>
-export default {
+import F7Col from "framework7-vue/components/col";
+import F7Link from "framework7-vue/components/link";
 
+export default {
+    components: {
+        F7Link,
+        F7Col}
 }
 </script>

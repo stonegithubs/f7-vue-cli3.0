@@ -10,8 +10,8 @@ import Framework7Vue from 'framework7-vue/framework7-vue.esm.bundle.js';
 import 'framework7/css/framework7.bundle.css';
 
 // Import Icons and App Custom Styles
-import IconsStyles from './assets/css/icons.css';
-import AppStyles from './assets/css/app.css';
+import IconsStyles from '@/assets/css/icons.css';
+import AppStyles from '@/assets/css/app.css';
 
 // Import App Component
 import App from './app.vue';
