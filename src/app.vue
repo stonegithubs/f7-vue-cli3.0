@@ -1,10 +1,8 @@
 <template>
   <!-- App -->
   <f7-app :params="f7params">
-
     <!-- Statusbar -->
     <f7-statusbar></f7-statusbar>
-
     <!-- Main View -->
     <f7-view id="main-view" url="/" main class="safe-areas"></f7-view>
 
