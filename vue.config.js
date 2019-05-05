@@ -3,7 +3,6 @@ const path = require('path');
 function resolve(dir) {
     return path.join(__dirname, dir)
 }
-const CopyWebpackPlugin = require('copy-webpack-plugin')
 
 module.exports = {
     devServer: {
@@ -11,15 +10,6 @@ module.exports = {
     },
     lintOnSave: true,
     configureWebpack: {
-        plugins: [
-            new CopyWebpackPlugin([
-                {
-                    from: __dirname+'/src/moudle/', // 不打包直接输出的文件
-                    to: __dirname+'/dist/', // 打包后静态文件放置位置
-                    ignore: ['.*'] // 忽略规则。（这种写法表示将该文件夹下的所有文件都复制）
-                }
-            ])
-        ],
         optimization: {
             // 根据需要为各应用分离代码块
             splitChunks: {

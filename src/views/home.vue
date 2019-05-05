@@ -6,12 +6,12 @@
         <f7-link href="/login/" icon-if-ios="f7:menu" icon-if-md="material:menu"></f7-link>
       </f7-nav-right>
     </f7-navbar>
-      <f7-block class="text-align-center"><h1>Framework7-vue </h1></f7-block>
+      <f7-block class="text-align-center"><h1>{{ $Config.siteName }}</h1></f7-block>
       <f7-block-title>我的应用</f7-block-title>
     <f7-block strong class="f7cont">
       <f7-row>
         <f7-col width="33">
-          <f7-link onclick="window.location.href='/PageA/index.html'">
+          <f7-link @click="$f7router.navigate('/form/')">
             <span class="icon-box bg-color-blue">
               <i class="f7-icons">folder_fill</i>
             </span>
@@ -19,7 +19,7 @@
           </f7-link>
         </f7-col>
         <f7-col width="33">
-          <f7-link onclick="window.location.href='/PageB/index.html'">
+          <f7-link href="/form/">
              <span class="icon-box bg-color-red">
               <i class="f7-icons">home_fill</i>
             </span>

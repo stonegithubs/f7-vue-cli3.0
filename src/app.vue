@@ -5,7 +5,6 @@
     <f7-statusbar></f7-statusbar>
     <!-- Main View -->
     <f7-view id="main-view" url="/" main class="safe-areas"></f7-view>
-
   </f7-app>
 </template>
 
@@ -15,13 +14,12 @@
     export default {
         data() {
             return {
-                // Framework7 parameters he re
+                // Framework7 parameters here
                 f7params: {
                     id: 'framework7-vue', // App bundle ID
                     name: 'Framework7-vue', // App name
                     theme: 'auto', // Automatic theme detection
-                    // App routes
-                    routes: routes,
+                    routes: routes// App routes
                 },
             }
         }

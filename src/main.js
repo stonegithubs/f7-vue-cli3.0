@@ -1,5 +1,7 @@
 // Import Vue
 import Vue from 'vue';
+import Api from './api/'
+import Config from './config/'
 // Import F7
 import Framework7 from 'framework7/framework7.esm.bundle.js';
 
@@ -18,6 +20,9 @@ import App from './app.vue';
 
 // Init F7 Vue Plugin
 Framework7.use(Framework7Vue)
+
+Vue.prototype.$Api = Api
+Vue.prototype.$Config = Config
 
 // Init App
 new Vue({
